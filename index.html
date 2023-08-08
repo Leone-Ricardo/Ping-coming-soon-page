@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Libre+Franklin"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        margin-top: 30px;
+        font-size: 16px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(0, 100%, 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/logo.svg" alt="logo" class="logo-header" />
+      <h1 class="title">
+        <span class="light-font"> We are launching </span>soon!
+      </h1>
+      <p class="description">Subscribe and get notified</p>
+    </header>
+    <main class="main-content">
+      <form class="form" novalidate="true">
+        <input
+          type="text"
+          class="form__input"
+          pattern="^([A-Za-z\d.-]+)@([a-z\d]+)(\.[a-z]{2,24}){1,8}$"
+          placeholder="Your email address"
+          required
+        />
+        <span class="form__error" aria-live="polite"></span>
+        <span class="form__success" aria-live="polite"></span>
+        <button class="form__button">Notify Me</button>
+      </form>
+      <img
+        src="./images/illustration-dashboard.png"
+        alt="main-image"
+        class="main-content__image"
+      />
+    </main>
+    <footer class="footer">
+      <div class="socials">
+        <a
+          class="socials__icon-container"
+          href="https://www.youtube.com/"
+          target="_blank"
+        >
+          <span class="socials__icon fab fa-youtube"></span>
+        </a>
+        <a
+          class="socials__icon-container"
+          href="https://twitter.com/"
+          target="_blank"
+        >
+          <span class="socials__icon fab fa-twitter"></span>
+        </a>
+        <a
+          class="socials__icon-container"
+          href="https://www.instagram.com/"
+          target="_blank"
+        >
+          <span class="socials__icon fab fa-instagram"></span>
+        </a>
+      </div>
+      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Leone Ricardo</a>.
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
